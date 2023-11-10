@@ -1,5 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getDatabase } from "firebase/database";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -10,8 +11,12 @@ const firebaseConfig = {
   projectId: "learning-60aa8",
   storageBucket: "learning-60aa8.appspot.com",
   messagingSenderId: "398800518276",
-  appId: "1:398800518276:web:54818bfbf3d005f89c16d1"
+  appId: "1:398800518276:web:54818bfbf3d005f89c16d1",
+  databaseURL: "https://learning-60aa8-default-rtdb.firebaseio.com/",
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+export const app = initializeApp(firebaseConfig);
+export const db = getDatabase(app);
+
+
