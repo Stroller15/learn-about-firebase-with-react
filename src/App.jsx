@@ -5,6 +5,7 @@ import { ref, set } from "firebase/database";
 import SignupForm from "./components/SignUp";
 
 import './App.css'
+import { SigninPage } from "./components/Signin";
 
 function App() {
 
@@ -25,7 +26,13 @@ function App() {
     </div>
     <br /><br />
     <div>
+      <h1>Sign up form implementation</h1>
       <SignupForm/>
+    </div>
+    <br /><br />
+    <div>
+      <h1>Signin form implementation</h1>
+      <SigninPage/>
     </div>
      
 
