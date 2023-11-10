@@ -1,6 +1,9 @@
 import { db } from "../firebase";
 import { ref, set } from "firebase/database";
 
+
+import SignupForm from "./components/SignUp";
+
 import './App.css'
 
 function App() {
@@ -16,8 +19,16 @@ function App() {
 
   return (
     <>
+    <div>
       <h1>This is firebase learning</h1>
       <button onClick={putData}>Put data in db</button>
+    </div>
+    <br /><br />
+    <div>
+      <SignupForm/>
+    </div>
+     
+
     </>
   )
 }
